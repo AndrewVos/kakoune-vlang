@@ -25,6 +25,7 @@ hook global BufSetOption filetype=(vlang) %{
     set-option buffer comment_line '//'
     set-option buffer comment_block_begin '/*'
     set-option buffer comment_block_end '*/'
+    set-option buffer formatcmd 'v fmt'
 }
 
 hook -group vlang-highlight global WinSetOption filetype=vlang %{
